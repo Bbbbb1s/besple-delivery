@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,14 +9,17 @@ body {
     align-items: center;
     background-color: #ffffff;
 }
+
 header {
     margin-top: 20px;
     text-align: center;
 }
+
 .container {
     width: 90%;
     max-width: 400px;
 }
+
 .calculate-section, .order-section, .faq-section {
     margin: 20px 0;
     background: rgb(230, 229, 229);
@@ -22,6 +27,7 @@ header {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .calculate-section input {
     width: calc(100% - 20px);
     padding: 10px;
@@ -29,6 +35,32 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.calculation-type {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.calculation-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6e6e6e;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.calculation-button.selected {
+    background-color: #333;
+    color: #fff;
+}
+
 .btn {
     display: block;
     width: 100%;
@@ -41,69 +73,92 @@ header {
     cursor: pointer;
     margin-bottom: 20px;
 }
+
+.textlink {
+    color: white;
+    text-decoration: none;
+}
+
 .btn:hover {
-    
     background-color: #333;
 }
-.section-title-faq{
+
+.section-title-faq {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
 }
+
 .logo {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
+
 .logo img {
     width: 100px;
 }
+
 .section-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .section-content img {
     width: 100%;
     border-radius: 4px;
 }
+
 .faq {
     margin: 20px 0;
-   
 }
+
 .faq h3 {
     cursor: pointer;
-    
 }
+
 .faq p {
     display: none;
     margin: 10px 0 0;
 }
+
 .make-order-content, .feedback-content {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .order-text, .feedback-text {
-    
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
 }
+
 .order-text h2, .feedback-text h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .order-image, .feedback-image {
     width: 49%;
     border-radius: 4px;
 }
+
 .feedback-text {
     margin-left: 10px;
 }
+
 .order-text {
     margin-right: 10px;
+}
+
+.result {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
 }

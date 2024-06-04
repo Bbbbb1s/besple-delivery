@@ -15,8 +15,13 @@
     <div class="container">
         <div class="calculate-section">
             <div class="section-title"></div>
-            <input type="text" placeholder="Введите цену в">
-            <button class="btn">Рассчитать</button>
+            <input type="text" id="input1" placeholder="Введите стоимость в ¥">
+            <div class="calculation-type">
+                <button id="clothes" class="calculation-button">Одежда</button>
+                <button id="shoes" class="calculation-button">Обувь</button>
+            </div>
+            <button class="btn" id="calculate">Рассчитать</button>
+            <div class="result" id="result"></div>
         </div>
 
         <div class="logo">
@@ -29,15 +34,15 @@
                 <img src="feedback.gif" alt="Feedback" class="feedback-image">
                 <div class="feedback-text">
                     <h2>Feedback</h2>
-                    <button class="btn">Посмотреть отзывы</button>
+                    <button class="btn"><a class="textlink" href="https://t.me/PD_FEEDBACK">Посмотреть отзывы</a></button>
                 </div>
             </div>
 
             <div class="section-title"></div>
             <div class="make-order-content">
                 <div class="order-text">
-                    <h2>To order</h2>
-                    <button class="btn">Сделать заказ</button>
+                    <h2>To Order</h2>
+                    <button class="btn"><a class="textlink" href="https://t.me/Besp1le">Сделать заказ</a></button>
                 </div>
                 <img src="order.png" alt="Make an Order" class="order-image">
             </div>
@@ -46,16 +51,19 @@
         <div class="faq-section">
             <div class="section-title-faq">FAQ</div>
             <div class="faq">
-                <h3 onclick="toggleFAQ(this)">What is Besple?</h3>
-                <p>Besple is a delivery service...</p>
+                <h3 onclick="toggleFAQ(this)">Как зарегистрироваться в приложении POIZON ?</h3>
+                <p><a href="https://teletype.in/@poizondelivery/instruktion">Инструкция</a></p>       
             </div>
             <div class="faq">
-                <h3 onclick="toggleFAQ(this)">How it works?</h3>
-                <p>Our service works by...</p>
+                <h3 onclick="toggleFAQ(this)">Курс ¥</h3>
+                <p>1¥ = 13,30¥</p>
             </div>
             <div class="faq">
-                <h3 onclick="toggleFAQ(this)">Do I need to book?</h3>
-                <p>Booking is optional...</p>
+                <h3 onclick="toggleFAQ(this)">Доставка</h3>
+                <p>
+                    Одежда - 1700 ₽ 
+                    Обувь - 2000 ₽     
+                </p>
             </div>
         </div>
     </div>
