@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Besple Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Besple Delivery</h1>
+    </header>
+
+    <div class="container">
+        <div class="calculate-section">
+            <div class="section-title"></div>
+            <input type="text" placeholder="Введите цену в">
+            <button class="btn">Рассчитать</button>
+        </div>
+
+        <div class="logo">
+            <img src="logo.png" alt="Besple">
+        </div>
+        
+        <div class="order-section">
+            <div class="section-title"></div>
+            <div class="feedback-content">
+                <img src="feedback.gif" alt="Feedback" class="feedback-image">
+                <div class="feedback-text">
+                    <h2>Feedback</h2>
+                    <button class="btn">Посмотреть отзывы</button>
+                </div>
+            </div>
+
+            <div class="section-title"></div>
+            <div class="make-order-content">
+                <div class="order-text">
+                    <h2>Make an Order</h2>
+                    <button class="btn">Сделать заказ</button>
+                </div>
+                <img src="order.png" alt="Make an Order" class="order-image">
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <div class="section-title-faq">FAQ</div>
+            <div class="faq">
+                <h3 onclick="toggleFAQ(this)">What is Besple?</h3>
+                <p>Besple is a delivery service...</p>
+            </div>
+            <div class="faq">
+                <h3 onclick="toggleFAQ(this)">How it works?</h3>
+                <p>Our service works by...</p>
+            </div>
+            <div class="faq">
+                <h3 onclick="toggleFAQ(this)">Do I need to book?</h3>
+                <p>Booking is optional...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
